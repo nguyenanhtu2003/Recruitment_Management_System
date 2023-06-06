@@ -1,6 +1,1452 @@
 <%- include('components/header.view.ejs') %>
 <%- include('components/navbar.view.ejs') %>
 
-<h1>Home</h1>
+<section class="banner-area">
+    <div class="headcpn">
+      <div class="owl-carousel headcpn-slider">
+        <div class="headcpn-item">
+          <div class="headcpn-img">
+            <img
+              data-src="../assets/images/home.jpg"
+              class="w-100 owl-lazy"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-inner">
+      <div class="container container-xxl banner-search">
+        <div class="row mx-n2 mx-lg-n3 align-items-center">
+          <div class="col-lg-12 px-2 px-lg-3">
+            <div class="banner-content">
+              <div class="banner-content-header">
+                <h1 style="">Nền tảng kết nối việc làm IT</h1>
+                <p style="color: #fff">
+                  Khám phá ngay việc làm IT phù hợp nhất với bạn
+                </p>
+              </div>
+              <form
+                class="search-job search_job"
+                action="https://itnavi.com.vn/job"
+              >
+                <div class="row mx-n2 mx-lg-n3">
+                  <div class="col-lg-6 col-sm-8 col-9 px-2 px-lg-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="keyword"
+                        name="keyword"
+                        placeholder="Tên việc làm, kỹ năng hoặc công ty"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-4 col-3 px-2 px-lg-3">
+                    <div class="row mx-n2 mx-lg-n3">
+                      <div class="col-lg-7 px-2 px-lg-3 d-none d-lg-block">
+                        <div class="form-group">
+                          <select
+                            class="form-control"
+                            name="location"
+                            id="location"
+                          >
+                            <option value="">Tất cả địa điểm</option>
+                            <option value="ha-noi">Hà Nội</option>
+                            <option value="ho-chi-minh">Hồ Chí Minh</option>
+                            <option value="da-nang">Đà Nẵng</option>
+                            <option value="khac">Khác</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 px-2 px-lg-3">
+                        <button type="submit" class="default-btn">
+                          <i class="fas fa-search"></i
+                          ><span class="d-none d-sm-inline-block">
+                            Tìm kiếm
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="suggest d-none d-lg-block">
+                <span>Người dùng hay tìm kiếm: </span
+                ><a href="https://itnavi.com.vn/job/Javascript">Javascript</a
+                ><a href="https://itnavi.com.vn/job/Android">Android</a
+                ><a href="https://itnavi.com.vn/job/PHP">PHP</a
+                ><a href="https://itnavi.com.vn/job/Java">Java</a
+                ><a href="https://itnavi.com.vn/job/Python">Python</a
+                ><a href="https://itnavi.com.vn/job/.NET">.NET</a
+                ><a href="https://itnavi.com.vn/job/Swift">Swift</a
+                ><a href="https://itnavi.com.vn/job/Vue.js">Vue.js</a
+                ><a href="https://itnavi.com.vn/job/C%23">C#</a
+                ><a href="https://itnavi.com.vn/job/Laravel">Laravel</a
+                ><a href="https://itnavi.com.vn/job/Node.js">Node.js</a
+                ><a href="https://itnavi.com.vn/job/Angular">Angular</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-line">
+      <div class="banner-line__left"></div>
+      <div class="banner-line__right"></div>
+    </div>
+    <div class="go-down">
+      <div
+        class="animate__animated animate__rubberBand animate__infinite animate__delay-1s"
+      >
+        <button type="button" class="go-down-btn">
+          <i class="fas fa-angle-double-down"></i
+          ><i class="fas fa-angle-double-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="hotjob-area bg-color pt-100">
+    <div class="container container-xxl">
+      <div class="section-title">
+        <span>Việc làm IT</span>
+        <h2>Việc làm tốt nhất</h2>
+      </div>
+    </div>
+    <div class="container container-xxl px-0">
+      <div class="hotjob-list hot_job hotjob-grid">
+        <div class="slick-item d-none d-lg-block">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item d-none d-md-block">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item d-none d-md-block">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item d-none d-md-block">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+        <div class="slick-item d-none d-md-block">
+          <div class="hotjob-item">
+            <div class="hotjob-item__company">
+              <div class="hotjob-item__company--logo">
+                <div class="hotjob-item-preload"></div>
+              </div>
+              <div
+                class="hotjob-item__company--info hotjob-item-preload"
+              ></div>
+            </div>
+            <div class="hotjob-item__name">
+              <div class="hotjob-item__name--link hotjob-item-preload"></div>
+            </div>
+            <div class="hotjob-item__bottom">
+              <div class="hotjob-item__location">
+                <i class="fas fa-map-marker-alt"></i
+                ><span
+                  class="hotjob-item__location--span hotjob-item-preload"
+                ></span>
+              </div>
+              <p class="hotjob-item__company--posted hotjob-item-preload"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="working-area bg-color pt-100 pb-70">
+    <div class="container container-xxl">
+      <div class="section-title">
+        <span>Features</span>
+        <h2>Tính năng nổi bật</h2>
+      </div>
+      <div class="row mx-n2 px-lg-n3">
+        <div class="col-lg-3 col-6 px-2 px-lg-3">
+          <a href="https://itnavi.com.vn/job" class="single-working"
+            ><div class="single-working-img">
+              <img class="" src="../assets/images/1.png" alt="" />
+            </div>
+            <h3>Nền tảng kết nối việc làm IT</h3></a
+          >
+        </div>
+        <div class="col-lg-3 col-6 px-2 px-lg-3">
+          <a href="https://itnavi.com.vn/company" class="single-working"
+            ><div class="single-working-img">
+              <img class="" src="../assets/images/2.png" alt="" />
+            </div>
+            <h3>Công ty</h3></a
+          >
+        </div>
+        <div class="col-lg-3 col-6 px-2 px-lg-3">
+          <a href="https://itnavi.com.vn/blog/" class="single-working"
+            ><div class="single-working-img">
+              <img class="" src="../assets/images/3.png" alt="" />
+            </div>
+            <h3>Blog</h3></a
+          >
+        </div>
+        <div class="col-lg-3 col-6 px-2 px-lg-3">
+          <a href="https://itnavi.com.vn/mycv" class="single-working"
+            ><div class="single-working-img">
+              <img class="" src="../assets/images/4.png" alt="" />
+            </div>
+            <h3>Portfolio</h3></a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="live-jobs-area bg-color pb-100">
+    <div class="container container-xxl">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <span> Good Skills </span>
+            <h2>Kỹ năng phổ biến</h2>
+          </div>
+          <div class="live-jobs-item">
+            <div class="live-jobs-item-list live_job_list">
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Javascript"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="" alt=""
+                  /></span>
+                  <p><span> Javascript </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Android"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/lgUrd1C.png" alt=""
+                  /></span>
+                  <p><span> Android </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/PHP"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/S2R3nrv.png" alt=""
+                  /></span>
+                  <p><span> PHP </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Java"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/bU9hjas.png" alt=""
+                  /></span>
+                  <p><span> Java </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Python"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/PoWk6mL.png" alt=""
+                  /></span>
+                  <p><span> Python </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/.NET"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/tmx2tnE.png" alt=""
+                  /></span>
+                  <p><span> .NET </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Swift"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/TSXDguH.png" alt=""
+                  /></span>
+                  <p><span> Swift </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Vue.js"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/SR7sO85.png" alt=""
+                  /></span>
+                  <p><span> Vue.js </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/C%23"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/O4JUeBa.png" alt=""
+                  /></span>
+                  <p><span> C# </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Laravel"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/cIalrYb.png" alt=""
+                  /></span>
+                  <p><span> Laravel </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Node.js"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/nyCRSko.png" alt=""
+                  /></span>
+                  <p><span> Node.js </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Angular"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/Csdr0tY.png" alt=""
+                  /></span>
+                  <p><span> Angular </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/MySQL"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/HQwSBOw.png" alt=""
+                  /></span>
+                  <p><span> MySQL </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/SQL"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/h30YhoX.png" alt=""
+                  /></span>
+                  <p><span> SQL </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/AWS"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/7zSYwRS.png" alt=""
+                  /></span>
+                  <p><span> AWS </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/C%2B%2B"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/r3UsISc.png" alt=""
+                  /></span>
+                  <p><span> C++ </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/CSS"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/szuEcxu.png" alt=""
+                  /></span>
+                  <p><span> CSS </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/HTML"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/HUsZXLe.png" alt=""
+                  /></span>
+                  <p><span> HTML </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Bootstrap"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/b2XZWn6.png" alt=""
+                  /></span>
+                  <p><span> Bootstrap </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/API"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/p9zxAjK.png" alt=""
+                  /></span>
+                  <p><span> API </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/AutoCAD"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/icJorb5.png" alt=""
+                  /></span>
+                  <p><span> AutoCAD </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Big+Data"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/3nibBUa.png" alt=""
+                  /></span>
+                  <p><span> Big Data </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Adobe+Acrobat"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/Tlo2Rba.png" alt=""
+                  /></span>
+                  <p><span> Adobe Acrobat </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/CMS"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/upMrguJ.png" alt=""
+                  /></span>
+                  <p><span> CMS </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/CRM"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/IXm7gMJ.png" alt=""
+                  /></span>
+                  <p><span> CRM </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/DNS"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/fXYbxJJ.png" alt=""
+                  /></span>
+                  <p><span> DNS </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/DOS"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/NazAvjx.png" alt=""
+                  /></span>
+                  <p><span> DOS </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/IOS"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/jdBjJfU.png" alt=""
+                  /></span>
+                  <p><span> IOS </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/JSON"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/7bMyMbI.png" alt=""
+                  /></span>
+                  <p><span> JSON </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Management"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/loozD5M.png" alt=""
+                  /></span>
+                  <p><span> Management </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Microsoft+Excel"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/pbDAO4E.png" alt=""
+                  /></span>
+                  <p><span> Microsoft Excel </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Microsoft+PowerPoint"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/i22uWI7.png" alt=""
+                  /></span>
+                  <p><span> Microsoft PowerPoint </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Microsoft+Word"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/mmeUhAm.png" alt=""
+                  /></span>
+                  <p><span> Microsoft Word </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Mockup"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/fxcHYrV.png" alt=""
+                  /></span>
+                  <p><span> Mockup </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Ruby"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/H6kabac.png" alt=""
+                  /></span>
+                  <p><span> Ruby </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/React.js"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/pE9tlRA.png" alt=""
+                  /></span>
+                  <p><span> React.js </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Jira"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/gsOKhHJ.png" alt=""
+                  /></span>
+                  <p><span> Jira </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/ASP.NET"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/3F510oi.png" alt=""
+                  /></span>
+                  <p><span> ASP.NET </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Testing"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/Gtjs5QJ.png" alt=""
+                  /></span>
+                  <p><span> Testing </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/TestProject"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/Fa9ywiN.png" alt=""
+                  /></span>
+                  <p><span> TestProject </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Testsigma"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/WBkvNAE.jpeg" alt=""
+                  /></span>
+                  <p><span> Testsigma </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/jQuery"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/qHLzJzF.png" alt=""
+                  /></span>
+                  <p><span> jQuery </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/JSF+Framework"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/3A1g6Ro.png" alt=""
+                  /></span>
+                  <p><span> JSF Framework </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Web+Analytics"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/Ge8bohM.png" alt=""
+                  /></span>
+                  <p><span> Web Analytics </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Web+Design"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/CpgMtE0.png" alt=""
+                  /></span>
+                  <p><span> Web Design </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Web+Services"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/9KqyHUf.png" alt=""
+                  /></span>
+                  <p><span> Web Services </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Windows+Server"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/h9SSWNP.png" alt=""
+                  /></span>
+                  <p><span> Windows Server </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Zend+Framework"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/DDuRLID.png" alt=""
+                  /></span>
+                  <p><span> Zend Framework </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/C+Language"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/HgJaHB5.png" alt=""
+                  /></span>
+                  <p><span> C Language </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Visual+Basic"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/kp9ZXZh.png" alt=""
+                  /></span>
+                  <p><span> Visual Basic </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Golang"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/dTkZGmh.png" alt=""
+                  /></span>
+                  <p><span> Golang </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/MATLAB"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/ZpqqNzF.png" alt=""
+                  /></span>
+                  <p><span> MATLAB </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Apache+Hadoop+Framework"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/phgLXCu.png" alt=""
+                  /></span>
+                  <p><span> Apache Hadoop Framework </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Apache+Wicket+Framework"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/07HwSbH.png" alt=""
+                  /></span>
+                  <p><span> Apache Wicket Framework </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Falcon+Framework"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/HlagQZ4.png" alt=""
+                  /></span>
+                  <p><span> Falcon Framework </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Ionic+Framework"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/rTZQZLz.png" alt=""
+                  /></span>
+                  <p><span> Ionic Framework </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Jasmine+Framework"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/IfeaRaA.png" alt=""
+                  /></span>
+                  <p><span> Jasmine Framework </span></p></a
+                >
+              </div>
+              <div class="slick-item">
+                <a
+                  href="https://itnavi.com.vn/job/Mac+OS+X"
+                  class="single-live-job"
+                  ><span class="single-live-job-img"
+                    ><img src="https://i.imgur.com/WGCBzKl.png" alt=""
+                  /></span>
+                  <p><span> Mac OS X </span></p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="hiring-list">
+            <h3>Dành cho Fresher</h3>
+            <div
+              class="hiring-list-list fresher_job"
+            >
+              <div class="draggable">
+         
+          
+                    <div>
+                      <div
+                        class="slick-item"
+                        style="width: 100%; display: inline-block"
+                      >
+                        <div class="hiring-list-item">
+                          <a
+                            href="https://itnavi.com.vn/job-detail/embedded-software-fresher-lap-trinh-nhung-6ElVq"
+                            class="hiring-img"
+                            tabindex="-1"
+                          >
+                            <img
+                              class="lazy"
+                              src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/ff1b0ac136fc8a59861a3ab657c85fed.jfif?v=1685350043"
+                              alt="Embedded Software Fresher - (Lập Trình Nhúng)"
+                              style="opacity: 1"
+                            />
+                          </a>
+                          <a
+                            href="https://itnavi.com.vn/job-detail/embedded-software-fresher-lap-trinh-nhung-6ElVq"
+                            class="link"
+                            tabindex="-1"
+                          >
+                            Embedded Software Fresher - (Lập Trình Nhúng)
+                          </a>
+                          <span
+                            >Công ty cổ phần dịch vụ công nghệ tin học
+                            HPT</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+               
+     
+       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="latest_job" class="hot-jobs-area bg-color pb-100">
+    <div class="container container-xxl">
+      <div class="row">
+        <div class="col-xl-8 col-lg-7">
+          <div class="section-title"><h2>Việc làm IT mới nhất</h2></div>
+          <div class="latest_job">
+              <div class="hot-jobs-list">
+                  <div class="row align-items-center">
+                      <div class="col-xl-2 col-md-3 hot-jobs-list-sm-center">
+                          <a href="https://itnavi.com.vn/job-detail/ky-su-trien-khai-he-thong-system-engineer-f8bRi" class="hot-jobs-img">
+                              <img src="https://d3hi6wehcrq5by.cloudfront.net/companies/7ffddf11095e1dd8538f7e5c44d79994.png?v=1642586215" alt="Kỹ sư triển khai hệ thống – System Engineer">
+                          </a>
+                      </div>
+                      <div class="col-xl-6 col-md-9 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-content">
+                              <h3>
+                                  <a href="https://itnavi.com.vn/job-detail/ky-su-trien-khai-he-thong-system-engineer-f8bRi">Kỹ sư triển khai hệ thống – System Engineer</a>
+                              </h3>
+                              <span class="sub-title">
+                                  <a href="https://itnavi.com.vn/company/tecapro">Tecapro</a>
+                              </span>
+                              <ul>
+                                  <li class="d-none d-xl-block">
+                                      <span>Hình thức:</span>
+                                      Toàn thời gian
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Ngôn ngữ:</span>
+                                      Tiếng Việt, Tiếng Anh
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Cấp độ:</span>
+                                      Middle, Senior
+                                  </li>
+                                  <li>
+                                      <span>Địa điểm:</span>
+                                      Hà Nội
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 offset-xl-0 col-md-9 offset-md-3 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-btn">
+                              <a href="https://itnavi.com.vn/job-detail/ky-su-trien-khai-he-thong-system-engineer-f8bRi?apply=true" target="_blank" class="default-btn">
+                                  Ứng tuyển ngay
+                              </a>
+                              <p class="d-none d-md-block">
+                                  <span>Ngày đăng: </span>
+                                  Jun 6, 2023
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+              <span class="featured premium">Premium</span>
+          
+              </div>
+          
+              <div class="hot-jobs-list">
+                  <div class="row align-items-center">
+                      <div class="col-xl-2 col-md-3 hot-jobs-list-sm-center">
+                          <a href="https://itnavi.com.vn/job-detail/java-developer-yK62g" class="hot-jobs-img">
+                              <img src="https://d3hi6wehcrq5by.cloudfront.net/companies/873c7815370112612fbee7b20db06cb0.png?v=1685350043" alt="JAVA DEVELOPER">
+                          </a>
+                      </div>
+                      <div class="col-xl-6 col-md-9 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-content">
+                              <h3>
+                                  <a href="https://itnavi.com.vn/job-detail/java-developer-yK62g">JAVA DEVELOPER</a>
+                              </h3>
+                              <span class="sub-title">
+                                  <a href="https://itnavi.com.vn/company/synnex-fpt">Synnex FPT</a>
+                              </span>
+                              <ul>
+                                  <li class="d-none d-xl-block">
+                                      <span>Hình thức:</span>
+                                      Toàn thời gian
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Ngôn ngữ:</span>
+                                      Tiếng Việt, Tiếng Anh
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Cấp độ:</span>
+                                      Junior, Middle
+                                  </li>
+                                  <li>
+                                      <span>Địa điểm:</span>
+                                      Hà Nội
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 offset-xl-0 col-md-9 offset-md-3 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-btn">
+                              <a href="https://itnavi.com.vn/job-detail/java-developer-yK62g?apply=true" target="_blank" class="default-btn">
+                                  Ứng tuyển ngay
+                              </a>
+                              <p class="d-none d-md-block">
+                                  <span>Ngày đăng: </span>
+                                  Jun 6, 2023
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+              <span class="featured amazing">Amazing</span>
+          
+              </div>
+          
+              <div class="hot-jobs-list">
+                  <div class="row align-items-center">
+                      <div class="col-xl-2 col-md-3 hot-jobs-list-sm-center">
+                          <a href="https://itnavi.com.vn/job-detail/nhan-vien-chinh-sach-an-toan-thong-tin-RdZJF" class="hot-jobs-img">
+                              <img src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/2c4473c56157d7b87d43ad4e61b23939.jpg?v=1685350043" alt="NHÂN VIÊN CHÍNH SÁCH AN TOÀN THÔNG TIN">
+                          </a>
+                      </div>
+                      <div class="col-xl-6 col-md-9 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-content">
+                              <h3>
+                                  <a href="https://itnavi.com.vn/job-detail/nhan-vien-chinh-sach-an-toan-thong-tin-RdZJF">NHÂN VIÊN CHÍNH SÁCH AN TOÀN THÔNG TIN</a>
+                              </h3>
+                              <span class="sub-title">
+                                  <a href="https://itnavi.com.vn/company/bluecyber-3724">Công ty TNHH Blue Cyber</a>
+                              </span>
+                              <ul>
+                                  <li class="d-none d-xl-block">
+                                      <span>Hình thức:</span>
+                                      Toàn thời gian
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Ngôn ngữ:</span>
+                                      Tiếng Việt, Tiếng Anh
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Cấp độ:</span>
+                                      Junior, Middle
+                                  </li>
+                                  <li>
+                                      <span>Địa điểm:</span>
+                                      Hà Nội
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 offset-xl-0 col-md-9 offset-md-3 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-btn">
+                              <a href="https://itnavi.com.vn/job-detail/nhan-vien-chinh-sach-an-toan-thong-tin-RdZJF?apply=true" target="_blank" class="default-btn">
+                                  Ứng tuyển ngay
+                              </a>
+                              <p class="d-none d-md-block">
+                                  <span>Ngày đăng: </span>
+                                  Jun 6, 2023
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+              <span class="featured hot">Hot</span>
+          
+              </div>
+          
+              <div class="hot-jobs-list">
+                  <div class="row align-items-center">
+                      <div class="col-xl-2 col-md-3 hot-jobs-list-sm-center">
+                          <a href="https://itnavi.com.vn/job-detail/nhan-vien-truc-van-hanh-he-thong-JBZaw" class="hot-jobs-img">
+                              <img src="https://d3hi6wehcrq5by.cloudfront.net/companies/7ffddf11095e1dd8538f7e5c44d79994.png?v=1642586215" alt="Nhân viên trực vận hành hệ thống">
+                          </a>
+                      </div>
+                      <div class="col-xl-6 col-md-9 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-content">
+                              <h3>
+                                  <a href="https://itnavi.com.vn/job-detail/nhan-vien-truc-van-hanh-he-thong-JBZaw">Nhân viên trực vận hành hệ thống</a>
+                              </h3>
+                              <span class="sub-title">
+                                  <a href="https://itnavi.com.vn/company/tecapro">Tecapro</a>
+                              </span>
+                              <ul>
+                                  <li class="d-none d-xl-block">
+                                      <span>Hình thức:</span>
+                                      Toàn thời gian
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Ngôn ngữ:</span>
+                                      Tiếng Việt, Tiếng Anh
+                                  </li>
+                                  <li class="d-none d-xl-block">
+                                      <span>Cấp độ:</span>
+                                      Junior, Middle
+                                  </li>
+                                  <li>
+                                      <span>Địa điểm:</span>
+                                      Hà Nội
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 offset-xl-0 col-md-9 offset-md-3 hot-jobs-list-sm-center">
+                          <div class="hot-jobs-btn">
+                              <a href="https://itnavi.com.vn/job-detail/nhan-vien-truc-van-hanh-he-thong-JBZaw?apply=true" target="_blank" class="default-btn">
+                                  Ứng tuyển ngay
+                              </a>
+                              <p class="d-none d-md-block">
+                                  <span>Ngày đăng: </span>
+                                  Jun 6, 2023
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+              <span class="featured premium">Premium</span>
+          
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="pagination-area latest_job_pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="hot-jobs-sidebar">
+            <div class="hot-job-sidebar">
+              <div class="hot-job-sidebar-img">
+                <img
+                  src="../assets/images/cv.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="hot-job-sidebar-content">
+                <h3>Lợi ích khi sử dụng ITNavi</h3>
+                <ul>
+                  <li><span>1</span> Bảo mật thông tin ứng viên</li>
+                  <li><span>2</span> Sẵn hơn 2000 job để lựa chọn</li>
+                  <li><span>3</span> Thông tin job rõ ràng</li>
+                  <li><span>4</span> Review công ty để tham khảo</li>
+                  <li><span>5</span> Định hướng chọn job phù hợp</li>
+                  <li><span>6</span> Sẵn review công ty</li>
+                  <li><span>7</span> Support ứng viên nhiệt tình</li>
+                  <li><span>8</span> Tư vấn tạo CV</li>
+                  <li><span>9</span> Nhiều mẫu CV để chọn lựa</li>
+                  <li><span>10</span> Tham gia miễn phí khoá học IT</li>
+                  <li><span>11</span> Nhận tài liệu IT mới nhất từ ITNavi</li>
+                  <li><span>12</span> Tham gia sự kiện ITNavi</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hot-job-sidebar d-none d-xl-block">
+              <div class="hot-job-sidebar-content quick-link">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                  <li>
+                    <i class="fas fa-angle-double-right"></i
+                    ><a href="https://itnavi.com.vn/job">
+                      Nền tảng kết nối việc làm IT
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fas fa-angle-double-right"></i
+                    ><a href="https://itnavi.com.vn/company"> Công ty </a>
+                  </li>
+                  <li>
+                    <i class="fas fa-angle-double-right"></i
+                    ><a href="https://itnavi.com.vn/blog/"> Blog </a>
+                  </li>
+                  <li>
+                    <i class="fas fa-angle-double-right"></i
+                    ><a href="#"> Portfolio </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-area bg-color pt-100 pb-70">
+    <div class="container container-xxl">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="faq-accordion">
+            <div class="faq-title"><h2>Câu hỏi thường gặp</h2></div>
+            <ul class="accordion">
+              <li class="accordion-item">
+                <a class="accordion-title active" href="javascript:void(0)"
+                  ><i class="fas fa-plus"></i> Tôi muốn tìm việc, FPT POLYTECHNIC có
+                  thể hỗ trợ tôi không?
+                </a>
+                <div class="accordion-content show">
+                  <p>
+                    Chào bạn, FPT POLYTECHNIC là nền tảng kết nối việc làm IT miễn phí
+                    dành cho lập trình viên. Để tìm kiếm công việc yêu thích,
+                    bạn:- Trên trang chủ ITNavi, nhập từ khóa liên quan đến
+                    công ty, kỹ năng hoặc từ khóa, địa điểm bạn mong muốn, sau
+                    đó nhấp vào nút Tìm Kiếm.- Nếu chưa muốn Ứng tuyển ngay,
+                    bạn có thể lưu lại tin đăng tuyển để xem sau bằng cách
+                    nhấp vào nút Lưu việc.- Để xem chi tiết một vị trí đăng
+                    tuyển trong kết quả tìm kiếm hoặc ứng tuyển vào vị trí bạn
+                    quan tâm, hãy ấn vào nút Ứng tuyển rồi đăng nhập hoặc đăng
+                    ký (trong trường hợp chưa có tài khoản trên website
+                    FPT POLYTECHNIC) với email và mật khẩu của bạn.
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-item">
+                <a class="accordion-title" href="javascript:void(0)"
+                  ><i class="fas fa-plus"></i> Làm thế nào để đăng ký tài
+                  khoản trên FPT POLYTECHNIC?
+                </a>
+                <div class="accordion-content">
+                  <p>
+                    Có 2 cách để đăng ký tài khoản miễn phí trên website
+                    FPT POLYTECHNIC:- Cách 1: Tự đăng ký thông tin:Ấn vào biểu tượng ở
+                    góc phải trên trang chủ. Nhấp vào Đăng ký. Hoặc truy cập
+                    đường dẫn sau: https://itnavi.com.vn/candidate/register.
+                    Sau khi điền đầy đủ thông tin yêu cầu tại mục này, nhấp
+                    Đăng ký để tạo tài khoản.Hệ thống sẽ gửi một email xác
+                    nhận đến địa chỉ email bạn vừa dùng để đăng ký tài khoản.
+                    Bạn vui lòng kiểm tra Hộp thư đến, Spam Mail hoặc Thư Rác.
+                    Click vào link trong email để hoàn tất quá trình đăng ký.-
+                    Cách 2: Đăng ký thông qua tài khoản FB hoặc GoogleẤn vào
+                    biểu tượng ở góc phải trên trang chủ. Nhấp vào Đăng ký.
+                    Hoặc truy cập đường dẫn sau:
+                    https://itnavi.com.vn/candidate/register. Chọn Đăng nhập
+                    bằng Facebook hoặc Đăng nhập bằng Google và nhấp vào tài
+                    khoản bạn muốn Đăng ký trên ITNavi.
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-item">
+                <a class="accordion-title" href="javascript:void(0)"
+                  ><i class="fas fa-plus"></i> Tôi không đăng nhập được tài
+                  khoản?
+                </a>
+                <div class="accordion-content">
+                  <p>
+                    Bạn không thể đăng nhập vào ITNavi có thể do các nguyên
+                    nhân sau:1. Bạn chưa đăng ký tài khoản trên ITNavi. Trong
+                    trường hợp này, bạn vui lòng thao tác đăng ký tài khoản
+                    miễn phí qua link sau: https://itnavi.com.vn/register2.
+                    Bạn đã đăng ký tài khoản thành công, nhưng chưa kích hoạt
+                    tài khoản. Sau khi đăng ký, bạn sẽ nhận được email yêu cầu
+                    xác nhận, bạn cần nhấp vào đường dẫn trong email để kích
+                    hoạt tài khoản.
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-item">
+                <a class="accordion-title" href="javascript:void(0)"
+                  ><i class="fas fa-plus"></i> Tôi muốn ứng tuyển công việc
+                </a>
+                <div class="accordion-content">
+                  <p>
+                    Nếu bạn quan tâm đến một việc làm IT được đăng tuyển trên
+                    FPT POLYTECHNIC, hãy ấn vào nút Ứng tuyển và hoàn thiện các thông
+                    tin Email, Số điện thoại và tải trực tiếp CV của bạn lên.
+                    Sau đó, nhấp nút Ứng tuyển ngay. CV của bạn sẽ được chuyển
+                    ngay đến nhà tuyển dụng.
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-item">
+                <a class="accordion-title" href="javascript:void(0)"
+                  ><i class="fas fa-plus"></i> Làm sao để có thể xem những
+                  công việc mà tôi đã lưu?
+                </a>
+                <div class="accordion-content">
+                  <p>
+                    Bạn có thể xem những việc làm IT bạn đã lưu bằng cách đăng
+                    nhập vào tài khoản của bạn và nhấp chuột vào Việc làm đã
+                    lưu.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="faq-img">
+            <img
+              src=
+              "../assets/images/huy.png"
+              alt="Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog-area bg-color ptb-70">
+    <div class="container container-xxl">
+      <div class="section-title">
+        <span> FPT POLYTECHNIC Blogs </span>
+        <h2>Tin tức nổi bật</h2>
+      </div>
+      <div class="blog_area row"></div>
+    </div>
+  </section>
+  <section class="subscribe-area subscribe-area-custom">
+    <div class="container container-xxl">
+      <div class="subscribe-bg">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="subscribe-content">
+              <h2>Find Your Next Great Job Opportunity!</h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form class="newsletter-form" data-toggle="validator">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email address"
+                name="EMAIL"
+                required
+                autocomplete="off"
+              /><button class="default-btn" type="submit">
+                <span>Subscribe</span>
+              </button>
+              <p>Join The Newsletter 20,000 Users Already!</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <%- include('components/footer.view.ejs') %>
