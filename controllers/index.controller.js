@@ -1,5 +1,3 @@
-
-
 exports.getIndex = async (req, res) => {
   try {
     res.render("index.view.ejs");
@@ -7,3 +5,4 @@ exports.getIndex = async (req, res) => {
     console.log(err);
   }
 };
+// update code here !!!
