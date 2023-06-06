@@ -8,6 +8,7 @@ const db = mysql.createPool({
   database: "sql12621730",
 });
 // sua them cho nay nhe
+// sua them cho nay nua nhe
 if (!db) {
   console.log("Lỗi Rồi");
 }
