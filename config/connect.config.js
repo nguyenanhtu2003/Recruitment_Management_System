@@ -7,7 +7,8 @@ const db = mysql.createPool({
   port: 3306,
   database: "sql12621730",
 });
-
+// sua them cho nay nhe
+// sua them cho nay nua nhe
 if (!db) {
   console.log("Lỗi Rồi");
 }
