@@ -1,5 +1,3 @@
-
-
 exports.getIndex = async (req, res) => {
   try {
     res.render("index.view.ejs");
@@ -15,3 +13,4 @@ exports.getJob = async (req, res) => {
       console.log(err);
     }
   };
+
