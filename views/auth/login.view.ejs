@@ -1,5 +1,5 @@
-<%- include('../components/header.view.ejs') %> 
-<%- include('../components/navbar.page.view.ejs') %>
+<%- include('../components/header.view.ejs') %> <%-
+include('../components/navbar.page.view.ejs') %>
 <link rel="stylesheet" href="../assets/css/candidate_login.css" />
 <section class="user-area ptb-70">
   <div class="container container-xxl">
@@ -7,21 +7,10 @@
       <div class="col-xl-6 col-lg-8 col-12 offset-xl-3 offset-lg-2">
         <div class="user-form-content log-in-50">
           <h3>Đăng nhập dành cho ứng viên</h3>
-          <form
-            method="POST"
-            action="/login"
-            class="user-form"
-          >
-            <input
-              type="hidden"
-              name="_token"
-              value="00DwjzXDn3fC92b7iqWruliJmpfNwInqYv2VGTzJ"
-            />
+          <div class="user-form">
             <div class="row">
               <div class="col-md-6 col-12">
-                <a
-                  href="#"
-                  class="or-login"
+                <a href="#" class="or-login"
                   ><img
                     class="auth-form__with--img"
                     src="https://d3hi6wehcrq5by.cloudfront.net/img/logo-auth-facebook.svg?v=1685350043"
@@ -31,9 +20,7 @@
                 </a>
               </div>
               <div class="col-md-6 col-12">
-                <a
-                  href="#"
-                  class="or-login google"
+                <a href="#" class="or-login google"
                   ><img
                     class="auth-form__with--img"
                     src="https://d3hi6wehcrq5by.cloudfront.net/img/logo-auth-google.svg?v=1685350043"
@@ -83,14 +70,12 @@
                       ><i class="fas fa-check"></i></span
                     ><span class="remember-text"> Lưu đăng nhập </span></label
                   ><span class="forgot-login"
-                    ><a href="/password/reset">
-                      Quên Mật Khẩu
-                    </a></span
+                    ><a href="/password/reset"> Quên Mật Khẩu </a></span
                   >
                 </div>
               </div>
               <div class="col-md-6 col-12 offset-md-3">
-                <button class="default-btn" type="submit">Đăng nhập</button>
+                <button class="default-btn" id="login" type="submit">Đăng nhập</button>
               </div>
               <div class="col-12">
                 <p class="create">
@@ -99,10 +84,44 @@
                 </p>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  // Gửi Data
+  $("#login").on("click", function () {
+    $.ajax({
+      type: "POST",
+      dataType: "JSON",
+      url: "/login",
+      data: {
+        type: "login",
+        email: $("#email").val(),
+        password: $("#password").val(),
+        isChecked: $("#login_remember").is(":checked"),
+      },
+      success: function (res) {
+        console.log(res);
+        Swal.fire({
+          icon: res.status === true ? "success" : "error",
+          title: "Thông Báo",
+          text: res.message,
+        }).then((result) => {
+          if (res.status === true) {
+            window.location.href = "/login";
+          } else {
+            window.location.href = "/register";
+          }
+        });
+      },
+      error: function (xhr, status, error) {
+        console.error(error);
+      },
+    });
+  });
+</script>
 <%- include('../components/footer.view.ejs') %>
