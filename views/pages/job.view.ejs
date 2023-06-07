@@ -1,0 +1,1047 @@
+<%- include('../components/header.view.ejs') %> <%-
+include('../components/navbar.page.view.ejs') %>
+
+<link rel="stylesheet" href="../assets/css/job.css" />
+<script src="../assets/js/job_search.js"></script>
+<section class="js bg-color">
+  <div class="container container-xxl">
+    <div class="js-box">
+      <div class="jsb row mx-0">
+        <div class="jsb-top col-12 px-0">
+          <div class="js-collapse s_collapse collapse show" style="">
+            <div class="jss">
+              <div class="jssa jssa--full">
+                <div class="jss-item w-100">
+                  <span class="jss-icon"><i class="fas fa-search"></i></span
+                  ><input
+                    type="text"
+                    name="keyword"
+                    id="sh_keyword"
+                    placeholder="Tìm kiếm công việc, kỹ năng hoặc công ty"
+                    value=""
+                    class="jss-input"
+                  />
+                </div>
+                <div class="jss-item">
+                  <span class="jss-icon"
+                    ><i class="fas fa-map-marker-alt"></i></span
+                  ><select
+                    id="sh_location"
+                    data-placeholder="Tất cả địa điểm"
+                    data-allowclear="true"
+                    class="search_select2 jss-select"
+                  >
+                    <option></option>
+                    <option value="ha-noi">Hà Nội</option>
+                    <option value="ho-chi-minh">Hồ Chí Minh</option>
+                    <option value="da-nang">Đà Nẵng</option>
+                    <option value="khac">Khác</option>
+                  </select>
+                </div>
+              </div>
+              <div class="jssa ml-0 ml-lg-3 d-flex d-lg-none">
+                <div class="jss-item">
+                  <button type="button" class="jss-filter mobile_filter_more">
+                    <i class="fas fa-filter"></i> Bộ lọc
+                  </button>
+                </div>
+                <div class="jss-item">
+                  <button type="button" class="jsf-alert">
+                    <i class="fas fa-bullhorn"></i> Tạo thông báo việc làm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="jsb-left col-12 col-lg-5 px-0 module_mobile_list search_collapse"
+        >
+          <div class="js-collapse l_collapse collapse show" style="">
+            <div class="js-tab">
+              <div class="js-tab__val">
+                <div class="js-tab__icon"></div>
+                <div class="js-tab__show">
+                  <h1 style="font-size: 17px">994 Việc làm IT</h1>
+                </div>
+              </div>
+              <button type="button" class="js-tab__alert">
+                <i class="fas fa-bullhorn"></i
+                ><span> Tạo thông báo việc làm </span>
+              </button>
+              <div class="tooltip" role="tooltip">
+                <div class="arrow"></div>
+                <div class="tooltip-inner"></div>
+              </div>
+            </div>
+            <div class="jsl">
+              <div class="jsl-scroll jsl_scroll">
+                <div class="tab-content jsl_inner">
+                  <div class="jsl-list all_jobs_list">
+                    <div class="jsl-item jsl_item active" data-id="23472">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/175b57034a67953f45ae906f3e45a447.png?v=1685350043"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">NodeJS</h2>
+                          <button
+                            type="button"
+                            data-id="23472"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">TechHub</p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location"></p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-amazing">
+                        <i class="fas fa-crown"></i><span>Amazing</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23431">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/35021ec4c15155c982b875ab80d89d16.crdownload?v=1685350043"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">
+                            Chuyên viên thiết kế sản phẩm (UI/UX)
+                          </h2>
+                          <button
+                            type="button"
+                            data-id="23431"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">
+                            TRUNG TÂM DỊCH VỤ TÀI CHÍNH SỐ VNPT ( VNPT Fintech)
+                          </p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hà Nội</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-amazing">
+                        <i class="fas fa-crown"></i><span>Amazing</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23490">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/companies/873c7815370112612fbee7b20db06cb0.png?v=1685350043"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">JAVA DEVELOPER</h2>
+                          <button
+                            type="button"
+                            data-id="23490"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">Synnex FPT</p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hà Nội</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-amazing">
+                        <i class="fas fa-crown"></i><span>Amazing</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23436">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/586d90256bb381d84a28107b3399a22d.jpg?v=1685350043"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">Quality Assurance (QA)</h2>
+                          <button
+                            type="button"
+                            data-id="23436"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">
+                            CÔNG TY TÀI CHÍNH TRÁCH NHIỆM HỮU HẠN MB SHINSEI
+                            (Mcredit)
+                          </p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hà Nội</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-premium">
+                        P <span>remium</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23459">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/companies/7ffddf11095e1dd8538f7e5c44d79994.png?v=1642586215"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">
+                            Nhân viên trực vận hành hệ thống
+                          </h2>
+                          <button
+                            type="button"
+                            data-id="23459"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">Tecapro</p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hà Nội</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-premium">
+                        P <span>remium</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23493">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/0febd8c93523d72a12f932628fcd78d6.webp?v=1685350043"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">
+                            Middle QA (Quality Assurance)
+                          </h2>
+                          <button
+                            type="button"
+                            data-id="23493"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">Công ty Cổ phần VTI</p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hà Nội</p>
+                          <p class="jsl-item__rs font-weight-bold">Top Brand</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-premium">
+                        P <span>remium</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23435">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/586d90256bb381d84a28107b3399a22d.jpg?v=1685350043"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">Java Developer</h2>
+                          <button
+                            type="button"
+                            data-id="23435"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">
+                            CÔNG TY TÀI CHÍNH TRÁCH NHIỆM HỮU HẠN MB SHINSEI
+                            (Mcredit)
+                          </p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hà Nội</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-premium">
+                        P <span>remium</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23324">
+                      <div class="jsl-item__logo">
+                        <img src="https://i.imgur.com/3YhUJZp.png" alt="" />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">
+                            SITECORE DEVELOPER ( PART-TIME / REMOTE )
+                          </h2>
+                          <button
+                            type="button"
+                            data-id="23324"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">
+                            CÔNG TY CỔ PHẦN DỊCH VỤ THÀNH CÔNG SOFTWARE
+                          </p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hồ Chí Minh</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-premium">
+                        P <span>remium</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23321">
+                      <div class="jsl-item__logo">
+                        <img src="https://i.imgur.com/3YhUJZp.png" alt="" />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">
+                            BIGCOMMERCE DEVLOPER JOB DESCRIPTION
+                          </h2>
+                          <button
+                            type="button"
+                            data-id="23321"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">
+                            CÔNG TY CỔ PHẦN DỊCH VỤ THÀNH CÔNG SOFTWARE
+                          </p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hồ Chí Minh</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-premium">
+                        P <span>remium</span>
+                      </div>
+                    </div>
+                    <div class="jsl-item jsl_item" data-id="23494">
+                      <div class="jsl-item__logo">
+                        <img
+                          src="https://d3hi6wehcrq5by.cloudfront.net/companies/7ffddf11095e1dd8538f7e5c44d79994.png?v=1642586215"
+                          alt=""
+                        />
+                      </div>
+                      <div class="jsl-item--right">
+                        <div class="jsl-item--line">
+                          <h2 class="jsl-item__name">
+                            Kỹ sư triển khai hệ thống – System Engineer
+                          </h2>
+                          <button
+                            type="button"
+                            data-id="23494"
+                            class="jsl-item__save job_save"
+                          >
+                            <i class="far fa-heart"></i>
+                          </button>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__cpn">Tecapro</p>
+                        </div>
+                        <div class="jsl-item--line">
+                          <p class="jsl-item__location">Hà Nội</p>
+                          <p class="jsl-item__sm">0 d</p>
+                        </div>
+                      </div>
+                      <div class="jsl-item__tag-premium">
+                        P <span>remium</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jsp">
+                    <button
+                      type="button"
+                      disabled
+                      data-paginate="1"
+                      class="jsp-item jsp-button paginate_prev"
+                    >
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="jsp-item">
+                      <span class="paginate_current" data-value="1"> 1 </span
+                      ><span>/</span
+                      ><span class="paginate_total" data-value="100">
+                        100
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      data-paginate="2"
+                      class="jsp-item jsp-button paginate_next"
+                    >
+                      <i class="fas fa-chevron-right"></i></button
+                    ><label class="jsp-item jsp-go"> Go to </label
+                    ><input
+                      type="text"
+                      class="jsp-item jsp-input paginate_input"
+                    />
+                  </div>
+                  <div class="ads px-0 px-lg-2 pb-2"></div>
+                </div>
+              </div>
+              <div class="jsl-s--top"></div>
+              <div class="jsl-s--bottom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="jsb-right col-12 col-lg-7 px-0 module_mobile_detail">
+          <div class="jsf">
+            <div class="jsfl jsfl-static filter_list_static"></div>
+            <div class="jsfl filter_list_main"></div>
+            <div class="jsf-more">
+              <a
+                href="#filter_more"
+                data-toggle="collapse"
+                class="jsf-more__btn filter_more"
+              >
+                Thêm
+              </a>
+              <div class="jsf-more__back">
+                <div id="filter_more" class="collapse jsf-more__collapse">
+                  <div class="jsfd">
+                    <div class="jsfd-inner">
+                      <a
+                        href="#filter_more"
+                        data-toggle="collapse"
+                        class="jsfd-close"
+                        ><i class="fas fa-times"></i
+                      ></a>
+                      <div class="jsfd-title">Bộ lọc</div>
+                      <div class="filter_list_more" id="filter_list_more"></div>
+                      <div class="jsfd-bottom">
+                        <button type="button" class="jsfd-clear filter_clear">
+                          Đặt lại bộ lọc
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="jsfa">
+              <button type="button" class="jsf-clear filter_clear">
+                Đặt lại
+              </button>
+            </div>
+          </div>
+          <div class="js-collapse d_collapse collapse" style="">
+            <div class="js-back js_back d-block d-lg-none">
+              <button type="button" class="js-back__button">
+                <i class="fas fa-chevron-left"></i
+                ><span
+                  class="js-back__searchtext m-0 animate__animated animate__fadeInRight animate__faster"
+                >
+                  Tìm kiếm
+                </span>
+              </button>
+            </div>
+            <div class="jsd">
+              <div class="jsd-scroll jsd_scroll" id="sj-detail-content">
+                <div class="jsd_inner">
+                  <div class="jsd-head">
+                    <div class="jsd-top">
+                      <div class="jsda">
+                        <h2 class="jsd-name" data-text="job_name">NodeJS</h2>
+                        <p class="jsda-des">
+                          <a
+                            href="https://itnavi.com.vn/company/cong-ty-co-phan-cong-nghe-tai-chinh-netfin-X2WRJ?about_us=1"
+                            target="_blank"
+                            data-text="company_name"
+                            data-link="company_slug"
+                            class="jsda-bold jsda-link"
+                          >
+                            TechHub </a
+                          ><span class="jsda-blur">•</span
+                          ><span
+                            class="jsda-success"
+                            data-text="job_published_at_show"
+                          >
+                            Jun 7, 2023 </span
+                          ><span class="jsda-blur">•</span
+                          ><span data-text="meta_hits"> 161 </span
+                          ><span> Lượt xem </span>
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="jsdb">
+                      <li class="jsdb-item">
+                        <p class="jsdb-icon">
+                          <i class="fas fa-briefcase"></i>
+                        </p>
+                        <p class="jsdb-text" style="text-transform: capitalize">
+                          <span data-text="company_meta_type"></span
+                          ><span class="jsdb-margin jsda-blur">•</span
+                          ><span data-text="job_career_type">
+                            Toàn thời gian </span
+                          ><span class="jsdb-margin jsda-blur">•</span
+                          ><span data-text="job_career_level">
+                            Junior, Middle, Senior
+                          </span>
+                        </p>
+                      </li>
+                      <li class="jsdb-item">
+                        <p class="jsdb-icon">
+                          <i class="far fa-building"></i>
+                        </p>
+                        <p class="jsdb-text">
+                          Quy mô:
+                          <span data-text="company_size"> 51 - 150 </span>
+                        </p>
+                      </li>
+                      <li class="jsdb-item">
+                        <p class="jsdb-icon">
+                          <i class="fas fa-map-marked-alt"></i>
+                        </p>
+                        <p class="jsdb-text">
+                          Địa điểm: <span data-text="job_addresses"></span>
+                        </p>
+                      </li>
+                      <li class="jsdb-item">
+                        <p class="jsdb-icon">
+                          <i class="fas fa-globe"></i>
+                        </p>
+                        <p class="jsdb-text">
+                          Ngôn ngữ:
+                          <span data-text="job_career_language}">
+                            Tiếng Việt, Tiếng Anh
+                          </span>
+                        </p>
+                      </li>
+                      <li class="jsdb-item">
+                        <p class="jsdb-icon">
+                          <i class="fas fa-wallet"></i>
+                        </p>
+                        <p class="jsdb-text">
+                          Lương:
+                          <span class="salary_area"> Thương lượng </span>
+                        </p>
+                      </li>
+                      <li class="jsdb-item">
+                        <p class="jsdb-icon">
+                          <i class="fas fa-qrcode"></i>
+                        </p>
+                        <p class="jsdb-text">
+                          ID:
+                          <span class="font-weight-600" data-text="job_id">
+                            23472
+                          </span>
+                        </p>
+                      </li>
+                    </ul>
+                    <div class="jsdc">
+                      <button type="button" class="jsdc-btn mr-2 apply_now">
+                        Ứng tuyển ngay
+                        <i class="fas fa-external-link-alt ml-2"></i>
+                      </button>
+                      <div class="job_save_area">
+                        <button
+                          type="button"
+                          data-id="23472"
+                          class="jsdc-btn outline job_save"
+                        >
+                          <i class="far fa-heart"></i>
+                        </button>
+                      </div>
+                      <button
+                        type="button"
+                        data-copy="https://itnavi.com.vn/job-detail/nodejs-U4tyg"
+                        class="jsdc-btn outline job_copy_link"
+                      >
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="jsd-center">
+                    <div class="jsdd">
+                      <div class="jsdd-item">
+                        <h3>Mô tả công việc:</h3>
+                        <div class="job_content" data-html="job_content">
+                          <div>
+                            <p>
+                              - Tham gia thiết kế v&agrave; lập tr&igrave;nh
+                              c&aacute;c dự &aacute;n phần mềm sử dụng
+                              ng&ocirc;n ngữ lập tr&igrave;nh NodeJS
+                            </p>
+                            <p>
+                              &middot; Trực tiếp tham gia c&ugrave;ng mọi người
+                              trong team v&agrave; c&aacute;c bộ phận
+                              kh&aacute;c ph&aacute;t triển t&iacute;nh năng,
+                              review code.
+                            </p>
+                            <p>&nbsp;</p>
+                          </div>
+                          <h3>Yêu cầu:</h3>
+                          <div>
+                            <p>
+                              C&oacute; kinh nghiệm từ 6 th&aacute;ng &ndash; 2
+                              năm l&agrave;m việc về NodeJS.
+                            </p>
+                            <p>
+                              &middot; Nắm vững kiến thức lập tr&igrave;nh căn
+                              bản, tư duy logic tốt, c&oacute; kỹ năng
+                              ph&acirc;n t&iacute;ch, tổng hợp.
+                            </p>
+                            <p>
+                              &middot; Ưu ti&ecirc;n những bạn trẻ c&oacute;:
+                              Đam m&ecirc; ph&aacute;t triển sản phẩm &amp;
+                              c&oacute; tư duy thuật to&aacute;n-lập
+                              tr&igrave;nh tốt.
+                            </p>
+                            <p>
+                              &middot; C&oacute; khả năng lập tr&igrave;nh với
+                              ng&ocirc;n ngữ nodeJS, SQL &amp; Non-SQL l&agrave;
+                              một lợi thế.
+                            </p>
+                            <p>
+                              &middot; C&oacute; định hướng theo lập
+                              tr&igrave;nh Backend với NodeJS
+                            </p>
+                            <p>
+                              &middot; Tinh thần tr&aacute;ch nhiệm cao,
+                              c&oacute; khả năng l&agrave;m việc nh&oacute;m
+                              v&agrave; l&agrave;m việc độc lập.
+                            </p>
+                            <p>&nbsp;</p>
+                          </div>
+                          <h3>Chế độ:</h3>
+                          <div>
+                            <p>
+                              - Mức lương sẽ trao đổi dựa tr&ecirc;n năng lực
+                              v&agrave; mong muốn của ứng vi&ecirc;n: dải lương
+                              từ 10-25M
+                            </p>
+                            <p>
+                              &middot; Được hưởng đầy đủ c&aacute;c chế độ
+                              ph&uacute;c lợi theo nội quy, quy chế của
+                              C&ocirc;ng ty (tham quan, nghỉ m&aacute;t, lương
+                              thưởng, nghỉ Tết lễ,&hellip;)
+                            </p>
+                            <p>
+                              &middot; L&agrave;m việc trong m&ocirc;i trường
+                              th&acirc;n thiện, cởi mở, c&ocirc;ng bằng,
+                              c&oacute; sự chuy&ecirc;n m&ocirc;n h&oacute;a
+                              s&acirc;u về c&ocirc;ng việc
+                            </p>
+                            <p>
+                              &middot; Đ&agrave;o tạo phương thức
+                              On-job-training, chia sẻ kinh nghiệm từ những
+                              th&agrave;nh vi&ecirc;n đi trước.
+                            </p>
+                            <p>
+                              &middot; Tiếp cận với những kỹ thuật lập
+                              tr&igrave;nh mới v&agrave; &aacute;p dụng thực tế
+                              v&agrave;o ph&aacute;t triển ứng dụng.
+                            </p>
+                            <p>
+                              &middot; Được hỗ trợ tham gia c&aacute;c
+                              kh&oacute;a học, kh&oacute;a đ&agrave;o tạo để
+                              n&acirc;ng cao kỹ năng nghề nghiệp.
+                            </p>
+                            <p>
+                              &middot; Lộ tr&igrave;nh con đường thăng tiến
+                              r&otilde; r&agrave;ng, được promote l&ecirc;n
+                              c&aacute;c vị tr&iacute; leader, quản l&yacute; dự
+                              &aacute;n.
+                            </p>
+                            <p>
+                              &middot; Được tham gia c&aacute;c hoạt động nội bộ
+                              c&aacute;c ng&agrave;y lễ 8/3, 20/10, sinh nhật,
+                              gi&aacute;ng sinh h&agrave;ng năm
+                            </p>
+                            <p>
+                              &middot; Nghỉ ph&eacute;p 12 ng&agrave;y/năm, nghỉ
+                              lễ theo quy định của nh&agrave; nước.
+                            </p>
+                            <p>&middot; Lương th&aacute;ng thứ 13</p>
+                            <p>
+                              &middot; Cơ hội thể hiện bản th&acirc;n,
+                              l&agrave;m chủ c&ocirc;ng việc v&agrave; thăng
+                              tiến cao trong sự nghiệp
+                            </p>
+                            <p>
+                              &middot; Đ&aacute;nh gi&aacute; năng lực, review
+                              lương 2 lần/năm hoặc x&eacute;t tăng lương trực
+                              tiếp nếu ho&agrave;n th&agrave;nh xuất sắc nhiệm
+                              vụ.
+                            </p>
+                            <p>
+                              &middot; Được hưởng đầy đủ c&aacute;c chế độ
+                              ph&uacute;c lợi, đ&oacute;ng BHXH, BHYT. sau 2
+                              th&aacute;ng thử việc
+                            </p>
+                            <p>
+                              &middot; Được l&agrave;m việc trong m&ocirc;i
+                              trường chuy&ecirc;n nghiệp v&agrave; th&acirc;n
+                              thiện, c&oacute; nhiều cơ hội thăng tiến v&agrave;
+                              ph&aacute;t triển nghề nghiệp
+                            </p>
+                            <p>Thời gian l&agrave;m việc</p>
+                            <p>
+                              &middot; Thời gian : 5.5ng&agrave;y/ tuần, Thứ 2
+                              &ndash; S&aacute;ng thứ 7
+                            </p>
+                            <p>&middot; S&aacute;ng: 8h30 - 12h00&rsquo;</p>
+                            <p>&middot; Chiều: 13h00&rsquo; - 17h30</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jsdd-item" data-class="skill">
+                        <div class="jsdd-title pt-1">Tags:</div>
+                        <div class="jsdd-tags" data-list="skill">
+                          <a href="https://itnavi.com.vn/job/nodejs">
+                            Node.js
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jsd-bottom">
+                    <div class="jsde">
+                      <div class="jsde-title">Thông tin công ty</div>
+                      <div class="jsde-top">
+                        <div class="jsde-logo">
+                          <img
+                            src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-web/companies/175b57034a67953f45ae906f3e45a447.png?v=1685350043"
+                            data-img="company_img_logo"
+                            alt=""
+                          />
+                        </div>
+                        <div class="jsde-top--right">
+                          <div class="jsde-top--center">
+                            <a
+                              href="https://itnavi.com.vn/company/cong-ty-co-phan-cong-nghe-tai-chinh-netfin-X2WRJ?about_us=1"
+                              target="_blank"
+                              data-text="company_name"
+                              data-link="company_slug"
+                              class="jsde-name"
+                            >
+                              TechHub
+                            </a>
+                            <p class="jsde-job">
+                              <span data-text="company_jobs_count"> 1 </span>
+                              việc làm
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jsde-center">
+                        <p class="jsde-des" data-html="company_overview"></p>
+                      </div>
+                      <div class="jsde-bottom">
+                        <a
+                          href="https://itnavi.com.vn/company/cong-ty-co-phan-cong-nghe-tai-chinh-netfin-X2WRJ?about_us=1"
+                          data-link="company_slug"
+                          target="_blank"
+                          class="jsde-more"
+                        >
+                          Xem thêm
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="jsd-s--top"></div>
+              <div class="jsd-s--bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="apply_modal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-apply">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ứng tuyển ngay</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="apply_form" method="post">
+          <input
+            type="hidden"
+            name="_token"
+            value="vx3D2dZslJRCaMhljQfocj7NoTN51HpWbB6OLIJN"
+          /><input
+            type="hidden"
+            name="job_id"
+            id="job_id"
+            data-input="job_id"
+            value="23431"
+          />
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group form-bubble">
+                <input
+                  type="text"
+                  name="job_title"
+                  id="job_title"
+                  maxlength="191"
+                  data-input="job_name"
+                  value="Chuyên viên thiết kế sản phẩm (UI/UX)"
+                  data-default="Chuyên viên thiết kế sản phẩm (UI/UX)"
+                  class="form-control"
+                /><label class="required" for="job_title">
+                  Vị trí công việc
+                </label>
+                <p id="job_title_error" class="error-text"></p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group form-bubble">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  value=""
+                  maxlength="100"
+                  class="form-control"
+                /><label class="required" for="name"> Họ và tên </label>
+                <p id="name_error" class="error-text"></p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group form-bubble">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value=""
+                  max="191"
+                  class="form-control"
+                /><label class="required" for="email">Email</label>
+                <p id="email_error" class="error-text"></p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group form-bubble">
+                <input
+                  type="number"
+                  name="mobile"
+                  id="mobile"
+                  value=""
+                  maxlength="20"
+                  class="form-control"
+                /><label class="required" for="mobile"> Số điện thoại </label>
+                <p id="mobile_error" class="error-text"></p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group form-file">
+                <div class="custom-file">
+                  <input
+                    type="file"
+                    name="file_cv"
+                    id="file_cv"
+                    value=""
+                    accept=".pdf,.docx"
+                    class="custom-file-input"
+                  /><label class="custom-file-label" for="file_cv">
+                    Chấp nhận file (.pdf, .docx) ...
+                  </label>
+                </div>
+                <p id="file_cv_error" class="error-text"></p>
+              </div>
+            </div>
+            <div class="col-12 row">
+              <div class="form-group col-2">
+                <label class="switch"
+                  ><input
+                    type="checkbox"
+                    id="accept_employer_search_input"
+                    name="accept_employer_search"
+                    value="1"
+                    checked="" /><span class="slider round"></span
+                ></label>
+              </div>
+              <div class="form-group pl-4 col-10">
+                <label
+                  >Cho phép các nhà tuyển dụng khác tìm thấy CV của tôi</label
+                >
+              </div>
+            </div>
+            <div id="accept_employer_search" class="col-12 row pr-0">
+              <div
+                class="form-group form-bubble col-12 pr-0"
+                style="margin-bottom: 35px"
+              >
+                <input
+                  type="number"
+                  name="yoe"
+                  id="yoe"
+                  data-default=""
+                  value=""
+                  max="99"
+                  min="0"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                  class="form-control"
+                /><label class="required pl-3" for="yoe">
+                  Số năm kinh nghiệm
+                </label>
+                <p id="yoe_error" class="error-text pl-3"></p>
+              </div>
+              <div class="col-12">
+                <div class="form-group form-bubble">
+                  <input
+                    type="number"
+                    name="address"
+                    id="address"
+                    value=""
+                    maxlength="20"
+                    class="form-control"
+                  /><label class="required" for="address"> Địa Chỉ </label>
+                  <p id="address_error" class="error-text"></p>
+                </div>
+              </div>
+
+              <div class="col-12 pr-0" style="margin-bottom: 20px">
+                <div class="form-group">
+                  <select
+                    id="level"
+                    name="level"
+                    class="form-control select2 select2-hidden-accessible"
+                    data-select2-id="select2-data-level"
+                    tabindex="-1"
+                    aria-hidden="true"
+                  >
+                    <option value="">Chọn Cấp Bậc</option>
+                    <option value="intern">Intern</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="junior">Junior</option>
+                    <option value="middle">Middle</option>
+                    <option value="senior">Senior</option>
+                    <option value="associate">Associate</option>
+                    <option value="professional">Professional</option>
+                    <option value="expert">Expert</option>
+                    <option value="architect">Architect</option>
+                    <option value="manager">Manager</option>
+                  </select>
+                  <p id="level_error" class="error-text"></p>
+                </div>
+              </div>
+
+              <div
+                class="form-group form-bubble col-6 pr-0"
+                style="margin-bottom: 40px"
+              >
+                <input
+                  type="number"
+                  name="salary_expect"
+                  id="salary_expect"
+                  value=""
+                  min="0"
+                  class="form-control"
+                /><label class="pl-3" for="salary_expect">
+                  Mức lương mong muốn
+                </label>
+                <p id="salary_expect_error" class="error-text pl-3"></p>
+              </div>
+              <div
+                class="form-group form-bubble col-6 pr-0"
+                style="margin-bottom: 40px"
+              >
+                <input
+                  type="number"
+                  name="salary_current"
+                  id="salary_current"
+                  value=""
+                  min="0"
+                  class="form-control"
+                /><label class="pl-3" for="salary_current">
+                  Mức lương hiện tại
+                </label>
+                <p id="salary_current_error" class="error-text pl-3"></p>
+              </div>
+            </div>
+            <div class="col-12 text-center mb-3">
+              <button
+                type="button"
+                class="btn_save btn btn-cancel"
+                data-dismiss="modal"
+              >
+                Hủy</button
+              ><button type="submit" class="btn_save btn btn-submit">
+                Ứng tuyển ngay
+              </button>
+            </div>
+            <div class="col-12">
+              <p class="ml-auto mb-0">
+                (<span class="text-danger"><strong>*</strong></span
+                >): Trường bắt buộc phải điền
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $(".apply_now").click(function () {
+      $("#apply_modal").modal("show");
+    });
+  });
+</script>

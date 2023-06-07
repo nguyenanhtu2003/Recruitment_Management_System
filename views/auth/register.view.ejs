@@ -1,4 +1,108 @@
-<%- include('../components/header.ejs') %> 
-<%- include('../components/navbar.ejs') %>
-<h2>Register</h2>
-<%- include('../layout/footer.ejs') %>
+<%- include('../components/header.view.ejs') %> 
+<%- include('../components/navbar.page.view.ejs') %>
+<link rel="stylesheet" href="../assets/css/candidate_login.css" />
+<section class="user-area ptb-70">
+  <div class="container container-xxl">
+    <div class="row">
+      <div class="col-xl-6 col-lg-8 col-12 offset-xl-3 offset-lg-2">
+        <div class="user-form-content">
+          <h3>Đăng ký tài khoản ứng viên</h3>
+          <form
+            method="POST"
+            action="/register"
+            class="user-form"
+          >
+            <input
+              type="hidden"
+              name="_token"
+              value="qFrkSCdM2Aux4XS1V6sGuDgjgxBVfE9PmlWapxsT"
+            />
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="register_name"> Họ và tên </label
+                  ><input
+                    id="register_name"
+                    name="name"
+                    type="text"
+                    value=""
+                    required=""
+                    autocomplete="name"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label> Nhập email của bạn </label
+                  ><input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value=""
+                    required=""
+                    autocomplete="email"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label> Số điện thoại </label
+                  ><input
+                    type="mobile"
+                    id="mobile"
+                    name="mobile"
+                    value=""
+                    required=""
+                    minlength="10"
+                    maxlength="20"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label> Mật khẩu </label
+                  ><input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required=""
+                    autocomplete="new-password"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="password_confirmation"> Xác Nhận Mật Khẩu </label
+                  ><input
+                    type="password"
+                    name="password_confirmation"
+                    id="password_confirmation"
+                    required=""
+                    autocomplete="new-password"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-12 offset-md-3">
+                <button class="default-btn register" type="submit">
+                  Đăng ký ngay
+                </button>
+              </div>
+              <div class="col-12">
+                <p class="create">
+                  Bạn đã có tài khoản?
+                  <a href="/login"> Đăng nhập </a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('../components/footer.view.ejs') %>
